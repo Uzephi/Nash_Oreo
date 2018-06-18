@@ -173,7 +173,7 @@ static struct clk_freq_tbl ftbl_gfx3d_clk_src_v2[] = {
 	F_SLEW( 515000000, 1030000000, gpu_pll0_pll_out_even,    1, 0, 0),
 	F_SLEW( 596000000, 1192000000, gpu_pll0_pll_out_even,    1, 0, 0),
 	F_SLEW( 670000000, 1340000000, gpu_pll0_pll_out_even,    1, 0, 0),
-	F_SLEW( 710000000, 1420000000, gpu_pll0_pll_out_even,    1, 0, 0),
+	F_SLEW( 750000000, 1420000000, gpu_pll0_pll_out_even,    1, 0, 0),
 	F_END
 };
 
@@ -732,3 +732,4 @@ int __init msm_gpucc_8998_init(void)
 	return platform_driver_register(&msm_clock_gpucc_driver);
 }
 arch_initcall(msm_gpucc_8998_init);
+
